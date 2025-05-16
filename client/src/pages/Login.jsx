@@ -8,7 +8,9 @@ import axios from 'axios';
 const Login = () => {
 
     const navigate = useNavigate();
-    const { backendUrl, setIsLoggedin, getUserData } = useContext(AppContent)
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
+    const {  setIsLoggedin, getUserData } = useContext(AppContent)
 
     const [state, setState] = useState('Sign Up')
     const [name, setName] = useState('')

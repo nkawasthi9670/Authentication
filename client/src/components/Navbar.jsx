@@ -8,6 +8,7 @@ import axios from 'axios'
 const Navbar = () => {
 
     const navigate = useNavigate()
+    
     const {userData, backendUrl, setUserData, setIsLoggedin} = useContext(AppContent)
 
     const sendVerificationOtp  = async ()=>{
